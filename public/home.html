@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home-page">
+    <main class="home-shell">
+      <section class="home-panel">
+        <p class="eyebrow">Home</p>
+        <h1 class="title">You are logged in</h1>
+        
+
+        <div class="user-box">
+          <p><strong>Name:</strong> <span id="userName">...</span></p>
+          <p><strong>Email:</strong> <span id="userEmail">...</span></p>
+          <p><strong>Joined:</strong> <span id="userJoined">...</span></p>
+        </div>
+
+        <div class="row">
+          <button id="refreshBtn" type="button">Refresh Profile</button>
+          <button id="logoutBtn" type="button" class="secondary">Logout</button>
+        </div>
+
+        <p id="homeMessage" class="message" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="home.js"></script>
+  </body>
+</html>
